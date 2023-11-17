@@ -21,7 +21,7 @@
     padding: 10px 5px;
   }
 }
-.accueil, nav ul {
+.liste-media, footer, .container-faq, .container-boxs, .accueil, nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,9 +149,10 @@ nav li a:hover::after {
 
 .accueil {
   width: 100%;
-  height: 900px;
+  height: auto;
   flex-direction: column;
-  padding: 50px 0 75px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .sous-titre {
@@ -168,7 +169,8 @@ nav li a:hover::after {
 
 @media screen and (max-width: 1100px) {
   .accueil {
-    height: 700px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .accueil img {
     width: 700px;
@@ -179,14 +181,10 @@ nav li a:hover::after {
 }
 @media screen and (max-width: 950px) {
   .accueil {
-    padding: 100px 0 0;
+    padding-top: 100px;
   }
 }
 @media screen and (max-width: 750px) {
-  .accueil {
-    padding: 210px 0 50px;
-    height: 500px;
-  }
   .accueil img {
     width: 500px;
   }
@@ -196,8 +194,7 @@ nav li a:hover::after {
 }
 @media screen and (max-width: 550px) {
   .accueil {
-    padding: 175px 0 0;
-    height: 400px;
+    padding-top: 80px;
   }
   .accueil img {
     width: 400px;
@@ -208,11 +205,223 @@ nav li a:hover::after {
 }
 @media screen and (max-width: 450px) {
   .accueil {
-    padding: 120px 0 0;
+    padding-top: 90px;
   }
   .accueil img {
     width: 320px;
   }
+}
+.container-performances {
+  color: #f1f1f1;
+  padding: 120px 20px 170px;
+  height: fit-content;
+  margin-bottom: 30px;
+  background-image: linear-gradient(316deg, rgba(234, 234, 234, 0.02) 0%, rgba(234, 234, 234, 0.02) 16.667%, rgba(128, 128, 128, 0.02) 16.667%, rgba(128, 128, 128, 0.02) 33.334%, rgba(161, 161, 161, 0.02) 33.334%, rgba(161, 161, 161, 0.02) 50.001%, rgba(154, 154, 154, 0.02) 50.001%, rgba(154, 154, 154, 0.02) 66.668%, rgba(77, 77, 77, 0.02) 66.668%, rgba(77, 77, 77, 0.02) 83.335%, rgba(10, 10, 10, 0.02) 83.335%, rgba(10, 10, 10, 0.02) 100.002%), linear-gradient(75deg, rgba(39, 39, 39, 0.03) 0%, rgba(39, 39, 39, 0.03) 20%, rgba(232, 232, 232, 0.03) 20%, rgba(232, 232, 232, 0.03) 40%, rgba(33, 33, 33, 0.03) 40%, rgba(33, 33, 33, 0.03) 60%, rgba(84, 84, 84, 0.03) 60%, rgba(84, 84, 84, 0.03) 80%, rgba(112, 112, 112, 0.03) 80%, rgba(112, 112, 112, 0.03) 100%), linear-gradient(103deg, rgba(174, 174, 174, 0.03) 0%, rgba(174, 174, 174, 0.03) 12.5%, rgba(190, 190, 190, 0.03) 12.5%, rgba(190, 190, 190, 0.03) 25%, rgba(191, 191, 191, 0.03) 25%, rgba(191, 191, 191, 0.03) 37.5%, rgba(23, 23, 23, 0.03) 37.5%, rgba(23, 23, 23, 0.03) 50%, rgba(227, 227, 227, 0.03) 50%, rgba(227, 227, 227, 0.03) 62.5%, rgba(71, 71, 71, 0.03) 62.5%, rgba(71, 71, 71, 0.03) 75%, rgba(162, 162, 162, 0.03) 75%, rgba(162, 162, 162, 0.03) 87.5%, rgba(85, 85, 85, 0.03) 87.5%, rgba(85, 85, 85, 0.03) 100%), linear-gradient(355deg, rgba(38, 38, 38, 0.02) 0%, rgba(38, 38, 38, 0.02) 25%, rgba(106, 106, 106, 0.02) 25%, rgba(106, 106, 106, 0.02) 50%, rgba(28, 28, 28, 0.02) 50%, rgba(28, 28, 28, 0.02) 75%, rgba(66, 66, 66, 0.02) 75%, rgba(66, 66, 66, 0.02) 100%), linear-gradient(137deg, rgba(38, 38, 38, 0.03) 0%, rgba(38, 38, 38, 0.03) 25%, rgba(211, 211, 211, 0.03) 25%, rgba(211, 211, 211, 0.03) 50%, rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%, rgba(24, 24, 24, 0.03) 75%, rgba(24, 24, 24, 0.03) 100%), linear-gradient(51deg, rgba(253, 253, 253, 0.03) 0%, rgba(253, 253, 253, 0.03) 14.286%, rgba(103, 103, 103, 0.03) 14.286%, rgba(103, 103, 103, 0.03) 28.572%, rgba(46, 46, 46, 0.03) 28.572%, rgba(46, 46, 46, 0.03) 42.858%, rgba(68, 68, 68, 0.03) 42.858%, rgba(68, 68, 68, 0.03) 57.144%, rgba(116, 116, 116, 0.03) 57.144%, rgba(116, 116, 116, 0.03) 71.43%, rgba(248, 248, 248, 0.03) 71.43%, rgba(248, 248, 248, 0.03) 85.716%, rgba(174, 174, 174, 0.03) 85.716%, rgba(174, 174, 174, 0.03) 100.002%), linear-gradient(283deg, rgba(20, 20, 20, 0.01) 0%, rgba(20, 20, 20, 0.01) 14.286%, rgba(23, 23, 23, 0.01) 14.286%, rgba(23, 23, 23, 0.01) 28.572%, rgba(19, 19, 19, 0.01) 28.572%, rgba(19, 19, 19, 0.01) 42.858%, rgba(134, 134, 134, 0.01) 42.858%, rgba(134, 134, 134, 0.01) 57.144%, rgba(4, 4, 4, 0.01) 57.144%, rgba(4, 4, 4, 0.01) 71.43%, rgba(254, 254, 254, 0.01) 71.43%, rgba(254, 254, 254, 0.01) 85.716%, rgba(87, 87, 87, 0.01) 85.716%, rgba(87, 87, 87, 0.01) 100.002%), linear-gradient(90deg, rgb(168, 1, 206), rgb(20, 120, 203));
+  clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 82%);
+}
+
+.separation {
+  margin: 0 auto 70px;
+  height: 2px;
+  width: 300px;
+  background-repeat: 3px;
+  background: #f1f1f1;
+  border: none;
+}
+
+.container-boxs {
+  width: 100%;
+}
+
+.box {
+  margin: 0 50px;
+}
+
+.box p {
+  text-align: center;
+}
+
+.nombre-clients {
+  font-size: 85px;
+  padding-bottom: 10px;
+}
+
+.type-de-clients {
+  font-size: 30px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.info-clients {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .nombre-clients {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .container-boxs {
+    flex-direction: column;
+  }
+  .box {
+    margin: 20px 0;
+  }
+  .separation {
+    margin: 0 auto 30px;
+    width: 30%;
+  }
+  .nombre-clients {
+    font-size: 80px;
+  }
+  .type-de-clients {
+    font-size: 25px;
+  }
+  .info-clients {
+    width: 100%;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .nombre-clients {
+    font-size: 50px;
+  }
+  .type-de-clients {
+    font-size: 22px;
+  }
+  .info-clients {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+.container-faq {
+  width: 70%;
+  max-width: 900px;
+  min-width: 300px;
+  height: auto;
+  margin: 10px auto 150px;
+  flex-direction: column;
+}
+
+.questions {
+  width: 100%;
+  height: auto;
+  margin: 5px;
+}
+
+.panneau-visible {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  position: relative;
+  z-index: 100;
+}
+
+.titre-question {
+  margin-left: 10px;
+  padding: 15px 5px;
+  font-size: 25px;
+}
+
+.panneau-visible img {
+  margin-right: 10px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.toggle-pannel {
+  padding: 0 15px;
+  height: 0;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.toggle-pannel h4 {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.toggle-pannel p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 750px) {
+  .container-faq {
+    width: 90%;
+    margin-bottom: 25px;
+  }
+  .titre-question {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+}
+.container-cta {
+  color: #f1f1f1;
+  padding: 150px 0 100px;
+  clip-path: polygon(0 17%, 100% 0%, 100% 82%, 0 100%);
+  background-image: linear-gradient(316deg, rgba(234, 234, 234, 0.02) 0%, rgba(234, 234, 234, 0.02) 16.667%, rgba(128, 128, 128, 0.02) 16.667%, rgba(128, 128, 128, 0.02) 33.334%, rgba(161, 161, 161, 0.02) 33.334%, rgba(161, 161, 161, 0.02) 50.001%, rgba(154, 154, 154, 0.02) 50.001%, rgba(154, 154, 154, 0.02) 66.668%, rgba(77, 77, 77, 0.02) 66.668%, rgba(77, 77, 77, 0.02) 83.335%, rgba(10, 10, 10, 0.02) 83.335%, rgba(10, 10, 10, 0.02) 100.002%), linear-gradient(75deg, rgba(39, 39, 39, 0.03) 0%, rgba(39, 39, 39, 0.03) 20%, rgba(232, 232, 232, 0.03) 20%, rgba(232, 232, 232, 0.03) 40%, rgba(33, 33, 33, 0.03) 40%, rgba(33, 33, 33, 0.03) 60%, rgba(84, 84, 84, 0.03) 60%, rgba(84, 84, 84, 0.03) 80%, rgba(112, 112, 112, 0.03) 80%, rgba(112, 112, 112, 0.03) 100%), linear-gradient(103deg, rgba(174, 174, 174, 0.03) 0%, rgba(174, 174, 174, 0.03) 12.5%, rgba(190, 190, 190, 0.03) 12.5%, rgba(190, 190, 190, 0.03) 25%, rgba(191, 191, 191, 0.03) 25%, rgba(191, 191, 191, 0.03) 37.5%, rgba(23, 23, 23, 0.03) 37.5%, rgba(23, 23, 23, 0.03) 50%, rgba(227, 227, 227, 0.03) 50%, rgba(227, 227, 227, 0.03) 62.5%, rgba(71, 71, 71, 0.03) 62.5%, rgba(71, 71, 71, 0.03) 75%, rgba(162, 162, 162, 0.03) 75%, rgba(162, 162, 162, 0.03) 87.5%, rgba(85, 85, 85, 0.03) 87.5%, rgba(85, 85, 85, 0.03) 100%), linear-gradient(355deg, rgba(38, 38, 38, 0.02) 0%, rgba(38, 38, 38, 0.02) 25%, rgba(106, 106, 106, 0.02) 25%, rgba(106, 106, 106, 0.02) 50%, rgba(28, 28, 28, 0.02) 50%, rgba(28, 28, 28, 0.02) 75%, rgba(66, 66, 66, 0.02) 75%, rgba(66, 66, 66, 0.02) 100%), linear-gradient(137deg, rgba(38, 38, 38, 0.03) 0%, rgba(38, 38, 38, 0.03) 25%, rgba(211, 211, 211, 0.03) 25%, rgba(211, 211, 211, 0.03) 50%, rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%, rgba(24, 24, 24, 0.03) 75%, rgba(24, 24, 24, 0.03) 100%), linear-gradient(51deg, rgba(253, 253, 253, 0.03) 0%, rgba(253, 253, 253, 0.03) 14.286%, rgba(103, 103, 103, 0.03) 14.286%, rgba(103, 103, 103, 0.03) 28.572%, rgba(46, 46, 46, 0.03) 28.572%, rgba(46, 46, 46, 0.03) 42.858%, rgba(68, 68, 68, 0.03) 42.858%, rgba(68, 68, 68, 0.03) 57.144%, rgba(116, 116, 116, 0.03) 57.144%, rgba(116, 116, 116, 0.03) 71.43%, rgba(248, 248, 248, 0.03) 71.43%, rgba(248, 248, 248, 0.03) 85.716%, rgba(174, 174, 174, 0.03) 85.716%, rgba(174, 174, 174, 0.03) 100.002%), linear-gradient(283deg, rgba(20, 20, 20, 0.01) 0%, rgba(20, 20, 20, 0.01) 14.286%, rgba(23, 23, 23, 0.01) 14.286%, rgba(23, 23, 23, 0.01) 28.572%, rgba(19, 19, 19, 0.01) 28.572%, rgba(19, 19, 19, 0.01) 42.858%, rgba(134, 134, 134, 0.01) 42.858%, rgba(134, 134, 134, 0.01) 57.144%, rgba(4, 4, 4, 0.01) 57.144%, rgba(4, 4, 4, 0.01) 71.43%, rgba(254, 254, 254, 0.01) 71.43%, rgba(254, 254, 254, 0.01) 85.716%, rgba(87, 87, 87, 0.01) 85.716%, rgba(87, 87, 87, 0.01) 100.002%), linear-gradient(90deg, rgb(168, 1, 206), rgb(20, 120, 203));
+}
+
+.txt-cta {
+  text-align: center;
+  font-size: 22px;
+  padding: 0 10px;
+}
+
+.btn-appel {
+  display: block;
+  color: #f1f1f1;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  margin: 30px auto;
+  width: 250px;
+  padding: 20px;
+  border-radius: 9999px;
+  background: #8a56eb;
+}
+
+@media screen and (max-width: 750px) {
+  .txt-cta {
+    font-size: 18px;
+  }
+  .btn-appel {
+    width: 200px;
+  }
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  border-top: 1px dashed #000;
+  background-color: #f1f1f1;
+  color: #333;
+  flex-direction: column;
+}
+
+.bloc {
+  min-width: 300px;
+}
+
+footer-contact h3 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-style: 22px;
+  line-height: 1.4;
+}
+
+.liste-media img {
+  width: 40px;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
