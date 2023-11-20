@@ -21,7 +21,7 @@
     padding: 10px 5px;
   }
 }
-.liste-media, footer, .container-faq, .container-boxs, .accueil, nav ul {
+.choix, .liste-media, footer, .container-faq, .container-boxs, .accueil, nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +31,7 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   position: relative;
   min-height: 100vh;
+  margin: 0;
 }
 
 nav {
@@ -144,7 +145,7 @@ nav li a:hover::after {
   }
 }
 .container-global {
-  padding-bottom: 400px;
+  padding-bottom: 40px;
 }
 
 .accueil {
@@ -378,7 +379,7 @@ nav li a:hover::after {
   font-size: 24px;
   text-align: center;
   text-decoration: none;
-  margin: 30px auto;
+  margin: 30px auto 0;
   width: 250px;
   padding: 20px;
   border-radius: 9999px;
@@ -422,6 +423,359 @@ footer p {
 .liste-media img {
   width: 40px;
   margin: 10px;
+}
+
+.container-global-fonctionnalites {
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 125px;
+  justify-content: center;
+  height: fit-content;
+}
+
+@media screen and (max-width: 1100px) {
+  .container-global-fonctionnalites {
+    gap: 80px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container-global-fonctionnalites {
+    gap: 50px;
+  }
+}
+.sous-titre-fonctionnalites {
+  text-align: center;
+  font-size: 24px;
+}
+
+.container-btn-accueil {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-fonctionnalites {
+  display: block;
+  width: 200px;
+  padding: 15px;
+  background-color: #8a56eb;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.fantome {
+  border: 2px solid #8a56eb;
+  background-color: transparent;
+  color: #8a56eb;
+}
+
+.liste-media li {
+  list-style-type: none;
+}
+
+.footer-medias p {
+  margin: 0;
+}
+
+@media screen and (max-width: 950px) {
+  .hero-title {
+    margin-top: 70px;
+  }
+}
+.container-fonctionnalites {
+  width: 90%;
+  max-width: 1300px;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.box-fonctionnalites {
+  display: flex;
+}
+
+.gauche-img {
+  font-size: 50px;
+  padding: 5px;
+}
+
+.droite-txt p:nth-of-type(1) {
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.droite-txt p:nth-of-type(2) {
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.droite-txt p {
+  margin: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .container-fonctionnalites {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .container-fonctionnalites {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.sous-titre-newsletter {
+  font-size: 27px;
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+form input {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 9999px;
+}
+
+form button {
+  width: 200px;
+  position: absolute;
+  right: 0;
+  padding: 15px;
+  font-size: 20px;
+  border: 1px solid #000;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+  form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sous-titre-newsletter {
+    font-size: 20px;
+  }
+  form button {
+    width: 125px;
+    font-size: 17px;
+  }
+  form input {
+    font-size: 17px;
+  }
+}
+.galerie-txt-pics {
+  width: 1300px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.separation-fonctionnalites {
+  margin-bottom: 100px;
+  border: none;
+  height: 2px;
+  background-color: #000;
+}
+
+.galerie-txt-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.galerie-txt-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.txt-box-galerie p:nth-child(1) {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.txt-box-galerie p:nth-child(3) {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.txt-box-galerie p:nth-child(4) {
+  margin-bottom: 18px;
+  font-size: 20px;
+}
+
+.underline-violet {
+  border: none;
+  height: 2px;
+  background-color: #8a56eb;
+  width: 30%;
+  text-align: right;
+  margin-left: auto;
+  display: inline-block;
+}
+
+.txt-box-img {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  object-fit: cover;
+}
+
+footer {
+  position: static;
+}
+
+.titre-tarifs {
+  padding: 120px 0 20px;
+}
+
+.separation {
+  border: none;
+  height: 2px;
+  background-color: #000;
+}
+
+.container-tarifs {
+  margin: 125px auto 200px;
+  width: 60%;
+  max-width: 1100px;
+  min-width: 300px;
+  height: auto;
+}
+
+.choix-tarifs {
+  margin: 0 auto;
+  height: 100px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.choix {
+  font-family: "Comfortaa", sans-serif;
+  height: 100%;
+  width: 170px;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  letter-spacing: 3px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.choix:nth-child(1) {
+  box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.2);
+  border-right: 1px solid #fff;
+}
+
+.choix:nth-child(2) {
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+  border-right: 1px solid #fff;
+}
+
+.choix:nth-child(3) {
+  box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.choix.active-choix {
+  background-color: #fff;
+  color: #000;
+}
+
+.tableau {
+  border-collapse: collapse;
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+  color: #f1f1f1;
+  background-image: linear-gradient(316deg, rgba(234, 234, 234, 0.02) 0%, rgba(234, 234, 234, 0.02) 16.667%, rgba(128, 128, 128, 0.02) 16.667%, rgba(128, 128, 128, 0.02) 33.334%, rgba(161, 161, 161, 0.02) 33.334%, rgba(161, 161, 161, 0.02) 50.001%, rgba(154, 154, 154, 0.02) 50.001%, rgba(154, 154, 154, 0.02) 66.668%, rgba(77, 77, 77, 0.02) 66.668%, rgba(77, 77, 77, 0.02) 83.335%, rgba(10, 10, 10, 0.02) 83.335%, rgba(10, 10, 10, 0.02) 100.002%), linear-gradient(75deg, rgba(39, 39, 39, 0.03) 0%, rgba(39, 39, 39, 0.03) 20%, rgba(232, 232, 232, 0.03) 20%, rgba(232, 232, 232, 0.03) 40%, rgba(33, 33, 33, 0.03) 40%, rgba(33, 33, 33, 0.03) 60%, rgba(84, 84, 84, 0.03) 60%, rgba(84, 84, 84, 0.03) 80%, rgba(112, 112, 112, 0.03) 80%, rgba(112, 112, 112, 0.03) 100%), linear-gradient(103deg, rgba(174, 174, 174, 0.03) 0%, rgba(174, 174, 174, 0.03) 12.5%, rgba(190, 190, 190, 0.03) 12.5%, rgba(190, 190, 190, 0.03) 25%, rgba(191, 191, 191, 0.03) 25%, rgba(191, 191, 191, 0.03) 37.5%, rgba(23, 23, 23, 0.03) 37.5%, rgba(23, 23, 23, 0.03) 50%, rgba(227, 227, 227, 0.03) 50%, rgba(227, 227, 227, 0.03) 62.5%, rgba(71, 71, 71, 0.03) 62.5%, rgba(71, 71, 71, 0.03) 75%, rgba(162, 162, 162, 0.03) 75%, rgba(162, 162, 162, 0.03) 87.5%, rgba(85, 85, 85, 0.03) 87.5%, rgba(85, 85, 85, 0.03) 100%), linear-gradient(355deg, rgba(38, 38, 38, 0.02) 0%, rgba(38, 38, 38, 0.02) 25%, rgba(106, 106, 106, 0.02) 25%, rgba(106, 106, 106, 0.02) 50%, rgba(28, 28, 28, 0.02) 50%, rgba(28, 28, 28, 0.02) 75%, rgba(66, 66, 66, 0.02) 75%, rgba(66, 66, 66, 0.02) 100%), linear-gradient(137deg, rgba(38, 38, 38, 0.03) 0%, rgba(38, 38, 38, 0.03) 25%, rgba(211, 211, 211, 0.03) 25%, rgba(211, 211, 211, 0.03) 50%, rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%, rgba(24, 24, 24, 0.03) 75%, rgba(24, 24, 24, 0.03) 100%), linear-gradient(51deg, rgba(253, 253, 253, 0.03) 0%, rgba(253, 253, 253, 0.03) 14.286%, rgba(103, 103, 103, 0.03) 14.286%, rgba(103, 103, 103, 0.03) 28.572%, rgba(46, 46, 46, 0.03) 28.572%, rgba(46, 46, 46, 0.03) 42.858%, rgba(68, 68, 68, 0.03) 42.858%, rgba(68, 68, 68, 0.03) 57.144%, rgba(116, 116, 116, 0.03) 57.144%, rgba(116, 116, 116, 0.03) 71.43%, rgba(248, 248, 248, 0.03) 71.43%, rgba(248, 248, 248, 0.03) 85.716%, rgba(174, 174, 174, 0.03) 85.716%, rgba(174, 174, 174, 0.03) 100.002%), linear-gradient(283deg, rgba(20, 20, 20, 0.01) 0%, rgba(20, 20, 20, 0.01) 14.286%, rgba(23, 23, 23, 0.01) 14.286%, rgba(23, 23, 23, 0.01) 28.572%, rgba(19, 19, 19, 0.01) 28.572%, rgba(19, 19, 19, 0.01) 42.858%, rgba(134, 134, 134, 0.01) 42.858%, rgba(134, 134, 134, 0.01) 57.144%, rgba(4, 4, 4, 0.01) 57.144%, rgba(4, 4, 4, 0.01) 71.43%, rgba(254, 254, 254, 0.01) 71.43%, rgba(254, 254, 254, 0.01) 85.716%, rgba(87, 87, 87, 0.01) 85.716%, rgba(87, 87, 87, 0.01) 100.002%), linear-gradient(90deg, rgb(168, 1, 206), rgb(20, 120, 203));
+}
+
+th {
+  font-size: 40px;
+}
+
+td,
+th {
+  border: 1px solid #fff;
+  padding: 8px;
+  vertical-align: middle;
+  width: 50%;
+}
+
+td {
+  padding-left: 15px;
+}
+
+.panneau {
+  display: none;
+}
+
+.panneau-active {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-tarifs {
+    width: 90%;
+    margin: 55px auto 100px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container-tarifs {
+    width: 95%;
+  }
+  .choix-tarifs {
+    height: 100px;
+  }
+  .choix {
+    width: 155px;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container-tarifs {
+    width: 300px;
+  }
+  .choix-tarifs {
+    height: 75px;
+  }
+  .choix {
+    width: 100px;
+    font-size: 18px;
+  }
+  .tableau {
+    height: 500px;
+    font-size: 22px;
+  }
+  th {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

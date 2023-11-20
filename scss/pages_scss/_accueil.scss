@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   position: relative;
   min-height: 100vh;
+  margin: 0;
 }
 
 // Navigation --------------------
@@ -119,7 +120,7 @@ nav li a:hover::after {
 
 // Container global --------------------
 .container-global {
-  padding-bottom: 400px;
+  padding-bottom: 40px;
 }
 
 // Accueil --------------------
@@ -569,7 +570,7 @@ nav li a:hover::after {
   font-size: 24px;
   text-align: center;
   text-decoration: none;
-  margin: 30px auto;
+  margin: 30px auto 0;
   width: 250px;
   padding: 20px;
   border-radius: 9999px;

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site produit codé en Sass</title>
+    <link rel="stylesheet" href="../reset/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="../scripts/app.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <span class="logo-nav">ACTOS</span>
+        <ul>
+            <li><a href="../index.html">Pourquoi Actos ?</a></li>
+            <li><a href="./pages/fonctionnalites.html">Fonctionnalités</a></li>
+            <li><a href="./pages/tarifs.html">Tarifs</a></li>
+        </ul>
+        <a href="#" class="lien-essai">Essai gratuit</a>
+        <button class="responsive-nav-btn">
+            <img src="../ressources/menu.png" alt="icône menu" width="30">
+        </button>
+    </nav>
+    <!-- Container global -->
+    <div class="container-global-fonctionnalites">
+        <!-- Tableaux / Onglets -->
+        <div class="container-titre">
+            <h1 class="titre-global titre-tarifs">
+                Trouvez le tarif qu'il vous faut.
+            </h1>
+            <hr class="separation">
+        </div>
+        <div class="container-tarifs">
+            <div class="choix-tarifs">
+                <button class="choix active-choix">FREE</button>
+                <button class="choix">BASIC</button>
+                <button class="choix">PRO</button>
+            </div>
+            <div class="contenu-tarifs">
+                <!-- Panneau 1 -->
+                <div class="panneau panneau-active">
+                    <table class="tableau">
+                        <tr>
+                            <th>Service</th>
+                            <th>Taille</th>
+                        </tr>
+                        <tr>
+                            <td>Prix</td>
+                            <td>0€/mois</td>
+                        </tr>
+                        <tr>
+                            <td>Nombre de site Web</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Comptes mails</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Bande passante</td>
+                            <td>100 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Certificat SSL</td>
+                            <td>Gratuit</td>
+                        </tr>
+                        <tr>
+                            <td>Sauvegarde quotidienne</td>
+                            <td>Non</td>
+                        </tr>
+                        <tr>
+                            <td>CMS</td>
+                            <td>Wordpress</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Panneau 2 -->
+                <div class="panneau">
+                    <table class="tableau">
+                        <tr>
+                            <th>Service</th>
+                            <th>Taille</th>
+                        </tr>
+                        <tr>
+                            <td>Prix</td>
+                            <td>40€/mois</td>
+                        </tr>
+                        <tr>
+                            <td>Nombre de site Web</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Comptes mails</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Bande passante</td>
+                            <td>200 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Certificat SSL</td>
+                            <td>Gratuit</td>
+                        </tr>
+                        <tr>
+                            <td>Sauvegarde quotidienne</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td>CMS</td>
+                            <td>Wordpress, Drupal</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Panneau 3 -->
+                <div class="panneau">
+                    <table class="tableau">
+                        <tr>
+                            <th>Service</th>
+                            <th>Taille</th>
+                        </tr>
+                        <tr>
+                            <td>Prix</td>
+                            <td>60€/mois</td>
+                        </tr>
+                        <tr>
+                            <td>Nombre de site Web</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Comptes mails</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Bande passante</td>
+                            <td>500 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Certificat SSL</td>
+                            <td>Gratuit</td>
+                        </tr>
+                        <tr>
+                            <td>Sauvegarde quotidienne</td>
+                            <td>Oui</td>
+                        </tr>
+                        <tr>
+                            <td>CMS</td>
+                            <td>Wordpress, Drupal, Joomla, Shopify</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Appel à l'action-->
+        <div class="container-call-to-action">
+            <h2 class="titre-global">30 jours satisfait ou remboursé</h2>
+            <p class="txt-cta">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#" class="btn-appel">Commencer</a>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bloc footer-medias">
+        <h3>Nos réseaux</h3>
+        <ul class="liste-media">
+            <li><a href="#"><img src="../ressources/Facebook.png" alt="icône Facebook"></a></li>
+            <li><a href="#"><img src="../ressources/Instagram.png" alt="icône Instagram"></a></li>
+            <li><a href="#"><img src="../ressources/linkedin.png" alt="icône Linkedin"></a></li>
+            <li><a href="#"><img src="../ressources/twitter.png" alt="icône Twitter"></a></li>
+            <li><a href="#"><img src="../ressources/site-internet.png" alt="icône Internet"></a></li>
+        </ul>
+        <p>03 25 46 82 15</p>
+        <p>supportclient@contact.com</p>
+        <p>6 rue de l'invention, 75007</p>
+    </footer>
+</body>
+
+</html>

@@ -5,12 +5,22 @@ const listeNav = document.querySelector("nav ul");
 let imgBtn = document.querySelector(".responsive-nav-btn img");
 btnNav.addEventListener("click", () => {
   listeNav.classList.toggle("active-nav");
-  if (imgBtn.src.includes("menu")) {
-    imgBtn.src = "./ressources/croix.png";
-    imgBtn.style.width = "20px";
+  if (window.location.href.includes("index")) {
+    if (imgBtn.src.includes("menu")) {
+      imgBtn.src = "./ressources/croix.png";
+      imgBtn.style.width = "20px";
+    } else {
+      imgBtn.src = "./ressources/menu.png";
+      imgBtn.style.width = "30px";
+    }
   } else {
-    imgBtn.src = "./ressources/menu.png";
-    imgBtn.style.width = "30px";
+    if (imgBtn.src.includes("menu")) {
+      imgBtn.src = "../ressources/croix.png";
+      imgBtn.style.width = "20px";
+    } else {
+      imgBtn.src = "../ressources/menu.png";
+      imgBtn.style.width = "30px";
+    }
   }
 });
 
@@ -36,3 +46,22 @@ allCross.forEach((logo) => {
     }
   });
 });
+
+//Onglets
+const choixTarifs = Array.from(document.querySelectorAll(".choix"));
+const contenuTarifs = Array.from(document.querySelectorAll(".panneau"));
+
+choixTarifs.forEach((choix) =>
+  choix.addEventListener("click", (e) => {
+    let indexClic = choixTarifs.indexOf(e.target);
+    for (i = 0; i < choixTarifs.length; i++) {
+      if (i === indexClic) {
+        choixTarifs[i].classList.add("active-choix");
+        contenuTarifs[i].classList.add("panneau-active");
+      } else {
+        choixTarifs[i].classList.remove("active-choix");
+        contenuTarifs[i].classList.remove("panneau-active");
+      }
+    }
+  })
+);
