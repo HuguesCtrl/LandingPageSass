@@ -58,6 +58,19 @@
     margin-top: 70px;
   }
 }
+@media screen and (max-width: 700px) {
+  .hero-title p {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container-btn-accueil {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+}
 
 //--------------Fonctionnalites--------------
 
@@ -152,33 +165,45 @@ form button {
   }
 }
 
+//Call to action
+.container-call-to-action-fonctionnalites {
+  display: block;
+  width: 100%;
+}
+
 //-------------- Nos produits --------------
 .galerie-txt-pics {
-  width: 1300px;
+  max-width: 1300px;
+  min-width: 300px;
   margin: 0 auto;
   flex-wrap: wrap;
   flex-direction: column;
   height: fit-content;
 }
 .separation-fonctionnalites {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   border: none;
   height: 2px;
   background-color: #000;
+  width: 40%;
+  margin-bottom: 80px;
 }
 
 .galerie-txt-description-container {
   display: flex;
   flex-direction: column;
-  gap: 35px;
-  width: 1000px;
+  gap: 55px;
+  max-width: 1000px;
+  min-width: 300px;
   margin: 0 auto;
+  padding: 0 2vw;
 }
 .galerie-txt-description {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
+  width: 100%;
 }
 
 .txt-box-galerie p:nth-child(1) {
@@ -192,6 +217,11 @@ form button {
 .txt-box-galerie p:nth-child(4) {
   margin-bottom: 18px;
   font-size: 20px;
+}
+
+.txt-box-galerie a {
+  color: $violet-principal;
+  text-decoration: none;
 }
 
 .underline-violet {
@@ -208,8 +238,42 @@ form button {
   height: 500px;
   border: 1px solid black;
   object-fit: cover;
+  display: block;
 }
 
+@media screen and (max-width: 1100px) {
+  .galerie-txt-description {
+    flex-direction: column;
+  }
+  .inversion img {
+    order: 10;
+  }
+  .separation-fonctionnalites {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .txt-box-galerie {
+    text-align: center;
+    width: 70%;
+  }
+  .galerie-txt-description img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .txt-box-galerie {
+    text-align: center;
+    width: 90%;
+  }
+  .galerie-txt-description img {
+    width: 90%;
+    height: 200px;
+  }
+  .galerie-txt-description {
+    gap: 15px;
+  }
+}
 //Footer---------------------------
 
 footer {

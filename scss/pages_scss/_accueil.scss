@@ -310,10 +310,10 @@ nav li a:hover::after {
   clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 82%);
 }
 
-.separation {
-  margin: 0 auto 70px;
+.separation-home {
+  margin: 0 auto 40px;
   height: 2px;
-  width: 300px;
+  width: 20%;
   background-repeat: 3px;
   background: #f1f1f1;
   border: none;
